@@ -1,6 +1,33 @@
-# MegaShop - Site Web Statique
+# MegaShop
 
 Un site web statique d'e-commerce proposant des produits électroniques et électroménagers.
+
+# Laravel - Travail à faire
+
+Objectif : migrer et enrichir le site statique en une application Laravel fonctionnelle:
+
+1. Initialisation
+	- Créer le projet Laravel : `laravel new megashop`
+	- Générer la clé : `php artisan key:generate`
+
+3. Routes
+	- Ajouter routes web dans `routes/web.php` (accueil, catégories, produit, contact, cgv)
+
+4. Vues Blade
+	- Créer `resources/views/layouts/app.blade.php` contenant la structure générale
+	- Créer `resources/views/partials/header.blade.php` contenant le header du site
+	- Créer `resources/views/partials/footer.blade.php` contenant le footer du site
+	- Convertir les pages statiques en vues Blade : index, catégories, produit-detail, cgv, contact
+
+5. contrôleurs
+	- Créer le contrôleur : `ShopController` concernant les routes de `accueil`, `contact`, `cgv`
+	- Créer le contrôleur : `ProductController` concernant les routes des `catégories`et `produit`
+
+6. Vues Blade - data & Link
+	- dynamiser l'affichage des vues avec les données du fichiers data.php
+    - en utilisant les routes du web.php, dynamiser les liens figurants dans les vues
+
+# Source - Site Web Statique
 
 ## 📁 Structure du Projet
 
@@ -63,28 +90,6 @@ srcRouting/
 - FAQ (Questions fréquemment posées)
 - Localisation
 
-## 🎨 Caractéristiques du Design
-
-- **Responsive** : Adaptation automatique aux mobile, tablette et desktop
-- **Moderne** : Design épuré avec gradient et ombres
-- **Accessible** : Navigation intuitive avec fil d'Ariane
-- **Cohérent** : Header et footer identiques sur toutes les pages
-- **Professionnel** : Grille de produits avec cartes élégantes
-
-## 🎯 Palette de Couleurs
-
-- **Couleur Primaire** : #2c3e50 (Gris foncé)
-- **Couleur Secondaire** : #3498db (Bleu)
-- **Couleur Accentuelle** : #e74c3c (Rouge)
-- **Fond clair** : #ecf0f1
-- **Fond page** : #f5f5f5
-
-## 💻 Technologies Utilisées
-
-- **HTML5** : Structure sémantique
-- **CSS3** : Flexbox et CSS Grid pour la mise en page
-- **Font** : Segoe UI, Tahoma, Geneva, Verdana
-
 ## 🚀 Utilisation
 
 1. Ouvrir `index.html` dans un navigateur web
@@ -100,19 +105,5 @@ srcRouting/
 - Le site est entièrement statique - aucun serveur requis
 - Peut être facilement déployé sur un serveur web statique
 
-## 📞 Informations de Contact
-
-**MegaShop**  
-123 Avenue du Commerce  
-75001 Paris, France  
-
-📧 Email : info@megashop.com  
-📱 Téléphone : +212 1 23 45 67 89  
-
-## 📜 Date de Création
-
-22 février 2026
-
----
 
 **MegaShop &copy; 2026 - Tous droits réservés**
